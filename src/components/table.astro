@@ -1,0 +1,27 @@
+---
+// Получаем снаружи
+interface Props {
+  caption: string;
+  data: string[];
+}
+---
+
+<style>
+  caption {
+    color: red;
+  }
+</style>
+
+<table>
+  <caption>{Astro.props.caption}</caption>
+  <thead></thead>
+  <tbody>
+    <tr>
+      {
+        Astro.props.data.map((item) => {
+          return <td>{item}</td>;
+        })
+      }
+    </tr>
+  </tbody>
+</table>
