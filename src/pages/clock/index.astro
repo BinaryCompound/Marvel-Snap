@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+      }
+
+      .seconds {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: x-small;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <span>
+      Время: <time>
+        <span id="hours"></span>
+        <span id="minutes"></span>
+        <span class="seconds" id="seconds"></span>
+      </time>
+    </span>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
